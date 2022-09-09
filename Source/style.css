@@ -1,0 +1,103 @@
+/*------------------Fonts-------------------------------------*/
+@font-face {
+    font-family: 'Gilroy';
+    src: local('../fonts/Gilroy Regular'), local('../fonts/Gilroy-Regular'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('../fonts/Gilroy-Semibold'), local('../fonts/Gilroy-Semibold'),
+        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('../fonts/Gilroy-Bold'), local('../fonts/Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('../fonts/Gilroy-Medium'), local('../fonts/Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+/*------------------Обнул-------------------------------------*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    color: #252B42;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+/*------------------icon-font-------------------------------------*/
+
+
+/*------------------Body-------------------------------------*/
+
+
+
+.ex1 {
+      font-family: Gilroy;
+      font-size: 24px;
+        }
+.ex2 {
+    font-size: 24px;
+    font-weight: 600
+    ;
+}
+.ex3 {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+      }
+.ex4 {
+font-family: Gilroy;
+font-size: 24px;
+font-weight: 700;
+}
