@@ -67,6 +67,9 @@ $darkGrayColor: #616161;
     border: 0;
     box-sizing: border-box;
 }
+:focus, :active{
+  outline: none;
+}
 a {
     text-decoration: none;
     color: inherit
@@ -97,7 +100,7 @@ body {
     font-family: $fontFamily;
     font-weight: 400;
 }
-button {
+button, input {
   background: none;
   font-family: $fontFamily;
 }
@@ -826,7 +829,7 @@ body {
 }
 .main-slider {
   background: #FCF8F3;
-  //min-width: 0;
+  min-width: 0;
   &__container {
 position: relative;
 @media (min-width: $md2+px) {
@@ -1093,6 +1096,8 @@ position: relative;
 .swiper-pagination-horizontal {
   display: flex;
   flex-wrap: wrap;
+  min-width: 0;
+
 }
 .swiper-pagination-bullet {
   cursor: pointer;
@@ -1530,7 +1535,9 @@ span.swiper-pagination-bullet {
   }
   &__image {
 //вертає картинку по класу ibg, але не працюэ правильно
-    //padding: 0px 0px 70% 0px;
+    object-fit: cover;
+    padding: 0px 0px 100% 0px;
+
     transition: height 0.8s ease 0s;
     height: 100%;
     @media (min-width: $md3+px) {
@@ -1585,7 +1592,8 @@ span.swiper-pagination-bullet {
       width: calc(100% + 48px);
     }
   }
-  &__dotts {
+  &__dotts, .swiper-pagination-bullets, .swiper-pagination-bullets,
+  .swiper-pagination-horizontal {
     @media (min-width: $md3+px) {
       position: absolute;
       bottom: 30px;
@@ -1829,3 +1837,4 @@ span.swiper-pagination-bullet {
 .tips__container .slider-tips {
   padding: 0px 16px;
 }
+
