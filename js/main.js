@@ -483,7 +483,7 @@ if (furniture && !isMobile.any()) {
 }
 
 
-
+/*
 //Пропадає плейсхолдер при фокусі на форму з імям main в полі з імям nameImput - добавити цей функціонал в форму пошуку
 const mainForm = document.forms.main;
 const mainFormInput = mainForm.nameInput;
@@ -494,7 +494,7 @@ mainFormInput.addEventListener("focus", function (e) {
 });
 mainFormInput.addEventListener("blur", function (e) {  
     mainFormInput.placeholder = mainFormInputPlaceholder;
-});
+});*/
 
 
 }
