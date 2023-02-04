@@ -481,31 +481,12 @@ if (furniture && !isMobile.any()) {
         }
     });
 }
-/*проба порівняти*/
 
-/*
 //Пропадає плейсхолдер при фокусі на форму з імям main в полі з імям nameImput - добавити цей функціонал в форму пошуку
 const mainForm = document.forms.main;
 const mainFormInput = mainForm.nameInput;
 const mainFormInputPlaceholder = mainFormInput.placeholder;
-
-mainFormInput.addEventListener("focus", function (e) {
-    mainFormInput.placeholder = ""; 
-});
-mainFormInput.addEventListener("blur", function (e) {  
-    mainFormInput.placeholder = mainFormInputPlaceholder;
-});*/
-
-
-}
-
-/*
-// Забираєм плейсхолдер в формі при фокусі 
-
-const mainForm = document.forms.main;
-const mainFormInput = mainForm.nameInput;
-//в першій main - це назва форми в полі name,   в другій nameInput - це назва самого інпута
-const mainFormInputPlaceholder = mainFormInput.placeholder;
+console.log(mainFormInput);
 
 mainFormInput.addEventListener("focus", function (e) {
     mainFormInput.placeholder = "";
@@ -513,33 +494,32 @@ mainFormInput.addEventListener("focus", function (e) {
 mainFormInput.addEventListener("blur", function (e) {
     mainFormInput.placeholder = mainFormInputPlaceholder;
 });
-*/
 
-
-/*
 // Перевіряєм чи коректний емейл
-
-const mainForm = document.forms.main;
-const mainFormInput = mainForm.nameInput;
-
 mainForm.addEventListener("submit", function (event) {
     if (emailTest(mainFormInput)) {
         mainFormInput.parentElement.insertAdjacentHTML(
-            "beforeend",
+            "afterbegin",
             `<div class="main-form__error">
-            Введите email
+            enter valid email
             </div>`
         );
         event.preventDefault();
     }
+
+    mainFormInput.addEventListener("focus", function (event) {
+        if (mainFormInput.previousElementSibling) {
+            mainFormInput.previousElementSibling.remove();
+        }
+    });
 });
-mainFormInput.addEventListener("focus", function (event) {
-    if (mainFormInput.nextElementSibling) {
-        mainFormInput.nextElementSibling.remove();
-    }
-});
+
 // Функція тесту email
 function emailTest(input) {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
-*/
+
+
+
+}
+
