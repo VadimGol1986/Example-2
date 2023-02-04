@@ -483,6 +483,10 @@ if (furniture && !isMobile.any()) {
 }
 /*проба порівняти*/
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 34c6d4f0ee7c3d8d802312221aaf22bf8219c1fd
 /*
 //Пропадає плейсхолдер при фокусі на форму з імям main в полі з імям nameImput - добавити цей функціонал в форму пошуку
 const mainForm = document.forms.main;
