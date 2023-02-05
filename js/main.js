@@ -75,33 +75,6 @@ function iconMenu(event) {
 
     }
 
-    //______________________________Слайдер Swiper________________________
-
-   /* //инициализация свайпера ЗРАЗКА
-new Swiper('.swiper', {
-    //Стрелки
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
-    //Буллети - кульки внизу фоток (прокрутка)
-    pagination: {
-        el: '.swiper-pagination',
-        //шоб клацались и переключали
-        clickable: true,
-        dynamicBullets: true,
-        //номерация кульок
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
-            },
-
-        },
-    mousewheel: {
-        sensitivity: 1,
-        eventsTarget: ".swiper",
-    },
- });
-*/
  //--------------------------------СЛАЙДЕР
 
 
@@ -486,7 +459,6 @@ if (furniture && !isMobile.any()) {
 const mainForm = document.forms.main;
 const mainFormInput = mainForm.nameInput;
 const mainFormInputPlaceholder = mainFormInput.placeholder;
-console.log(mainFormInput);
 
 mainFormInput.addEventListener("focus", function (e) {
     mainFormInput.placeholder = "";
@@ -517,8 +489,18 @@ mainForm.addEventListener("submit", function (event) {
 // Функція тесту email
 function emailTest(input) {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-}
+};
 
+const searchForm = document.forms.search;
+const searchFormInput = searchForm.searchInput;
+const searchFormInputPlaceholder = searchFormInput.placeholder;
+
+searchFormInput.addEventListener("focus", function (e) {
+    searchFormInput.placeholder = "";
+});
+searchFormInput.addEventListener("blur", function (e) {
+    searchFormInput.placeholder = searchFormInputPlaceholder;
+});
 
 
 }

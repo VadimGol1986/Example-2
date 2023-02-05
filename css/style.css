@@ -1771,6 +1771,7 @@ span.swiper-pagination-bullet {
     bottom: 30px;
     width: 100%;
     left: 396px;
+    z-index: 3;
   }
 }
 @media (max-width: 767.98px) {
