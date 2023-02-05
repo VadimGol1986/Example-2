@@ -797,21 +797,32 @@ body {
   }
 }
 
+.main-form__error {
+  color: red;
+  font-size: 14px;
+  /*width: 100%;*/
+}
+
+
+
+
+
 .subscribe__title {
   margin: 0px 0px 0.6666666667em 0px;
 }
 .subscribe__form {
   display: flex;
   position: relative;
+  /*flex-wrap: wrap;*/
 }
-.subscribe__form .form__error {
+/*.subscribe__form .form__error {
   position: absolute;
   top: 100%;
   margin-top: 3px;
   left: 12px;
   color: red;
   font-size: 12px;
-}
+}*/
 .subscribe__button {
   flex: 0 0 45px;
   height: 45px;
@@ -1760,6 +1771,7 @@ span.swiper-pagination-bullet {
     bottom: 30px;
     width: 100%;
     left: 396px;
+    z-index: 3;
   }
 }
 @media (max-width: 767.98px) {
